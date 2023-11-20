@@ -1,1 +1,3 @@
-# CS-583-Exchange_Rate_Prediction
+# Exchange Rate Prediction
+
+Introduction
