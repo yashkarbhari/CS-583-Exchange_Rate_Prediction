@@ -1,3 +1,3 @@
-# Exchange Rate Prediction
+# Foreign Exchange Rate Prediction
 
 Introduction
