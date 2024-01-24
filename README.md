@@ -12,3 +12,22 @@ In addition to the primary goal of constructing an accurate prediction model, th
 
 Ultimately, the best-performing model (LSTM), underwent a crucial refinement through hyperparameter tuning during the fine-tuning phase. In this process, the foundational layers of the pre-tuned model remained fixed, while the subsequent layers which were being fine-tuned with Indian Forex data underwent optimization. Parameters such as activation functions, node counts in each layer, and the final optimizer function were meticulously selected using the Keras-tuner library. This meticulous approach resulted in the development of a final model that significantly outperformed its counterparts created through manual trial and error. Further details on these steps will be provided in subsequent sections of this report, offering insight into the enhancement achieved through transfer learning and hyperparameter tuning.
 
+### Methods
+This section provides a comprehensive overview of the processes, technologies, and implementation details employed throughout the course of this project. The methodology encompasses the entire lifecycle of the project, detailing the steps taken to achieve the objectives set forth.5.  Experiments.
+#### 3.1 Data Cleaning
+ We meticulously curated the dataset to ensure its accuracy, consistency, and reliability. This involved identifying and rectifying errors, resolving inconsistencies, handling missing values, and addressing outliers.
+
+o	Standardizing Date Format
+To align disparate date formats across multiple datasets, we standardize the date values by making them universally consistent and easily distinguishable, bridging variations like ‘%d-%m-%Y’ and ‘%Y-%m-%d’ for seamless integration.
+o	Interpolation of Null Values
+In addressing missing data points, we employed linear interpolation techniques. This method intelligently filled null values by referencing neighboring data or predefined criteria within the dataset.
+o	Dataset Merging
+Combining datasets from various countries was essential. We orchestrated the merging process using Pandas' ‘merge_asof’ function, opting for a left join merge approach with a tolerance window of two days
+o	Data Normalization and Scaling
+Leveraging MinMaxScaler, we standardized numerical features within a predetermined range, typically between 0 and 1. This ensured uniformity while preserving the relative distributions, enabling accurate comparisons across different variables. to form a comprehensive merged dataset.
+#### 3.2 Exploratory Data Analysis
+Our comprehensive EDA delved deep into dataset characteristics, distributions, and inter-variable relationships. This exploration unearthed intricate patterns, anomalies, and trends, empowering informed decisions for subsequent analyses and modeling. We specifically conducted country-wise data visualization, generating 2x2 subplots and illustrative boxplots to visualize column distributions effectively.
+#### 3.3 Model Development
+Employing Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) architectures, we embarked on model development. Initially, we formulated a baseline model with RNN/LSTM layers, yielding modest outcomes. Subsequently, we engineered separate pre-trained models based on datasets with varying target data availability: no target data, partial target data, and substantial data. Utilizing transfer learning, we fine-tuned these models by freezing initial layers and augmenting them with additional RNN/LSTM layers plus a Dense layer. Hyperparameter tuning, performed using Random Search Keras Tuner, significantly enhanced the model's accuracy, refining our predictive capabilities.
+
+
