@@ -37,6 +37,7 @@ Employing Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) archi
 
 ### Results 
 
+The performance evaluation of the various models implemented in our study is summarized in the table below. Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R^2) are presented for each model, providing insights into their predictive capabilities. Notably, the HP Tuned LSTM model outperforms others, demonstrating superior predictive accuracy with a lower MSE, MAE, and a positive R^2 value, indicating a better fit to the data.
 
 | First Header  | Second Header |
 | ------------- | ------------- |
