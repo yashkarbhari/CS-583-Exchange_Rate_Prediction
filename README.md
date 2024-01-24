@@ -39,10 +39,15 @@ Employing Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) archi
 
 The performance evaluation of the various models implemented in our study is summarized in the table below. Mean Squared Error (MSE), Mean Absolute Error (MAE), and R-squared (R^2) are presented for each model, providing insights into their predictive capabilities. Notably, the HP Tuned LSTM model outperforms others, demonstrating superior predictive accuracy with a lower MSE, MAE, and a positive R^2 value, indicating a better fit to the data.
 
-| First Header  | Second Header |Second Header |Second Header |Second Header |
+| Sr No.| Model |MSE|MAE|R^2|
 | ------------- | ------------- |------------- | ------------- | ------------- |
-| Content Cell  | Content Cell  | Content Cell  | Content Cell  || Content Cell  | 
-| Content Cell  | Content Cell  |Content Cell  | Content Cell  || Content Cell  | 
-| First Header  | Second Header |Second Header |Second Header |Second Header |
-| First Header  | Second Header |Second Header |Second Header |Second Header |
+|1|Baseline RNN | Content Cell  | Content Cell  || Content Cell  | 
+|2|Baseline LSTM |Content Cell  | Content Cell  || Content Cell  | 
+|3| RNN (Substantial Target Data)|Second Header |Second Header |Second Header |
+|4| LSTM (Substantial Target Data) |Second Header |Second Header |Second Header |
+|5| RNN (Partial Target Data) |Second Header |Second Header |Second Header |
+|6| LSTM (Partial Target Data) |Second Header |Second Header |Second Header |
+|7| RNN (No Target Data) |Second Header |Second Header |Second Header |
+|8| LSTM (No Target Data) |Second Header |Second Header |Second Header |
+|9| HP Tuned LSTM |Second Header |Second Header |Second Header |
 
