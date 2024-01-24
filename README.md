@@ -35,4 +35,10 @@ Employing Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) archi
 
 ![](cs583_model_architecture.png)
 
+### Results 
 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
