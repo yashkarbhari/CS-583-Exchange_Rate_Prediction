@@ -33,4 +33,6 @@ Our comprehensive EDA delved deep into dataset characteristics, distributions, a
 #### o Model Development
 Employing Recurrent Neural Network (RNN) and Long Short-Term Memory (LSTM) architectures, we embarked on model development. Initially, we formulated a baseline model with RNN/LSTM layers, yielding modest outcomes. Subsequently, we engineered separate pre-trained models based on datasets with varying target data availability: no target data, partial target data, and substantial data. Utilizing transfer learning, we fine-tuned these models by freezing initial layers and augmenting them with additional RNN/LSTM layers plus a Dense layer. Hyperparameter tuning, performed using Random Search Keras Tuner, significantly enhanced the model's accuracy, refining our predictive capabilities.
 
+![](cs583_model_architecture.png)
+
 
