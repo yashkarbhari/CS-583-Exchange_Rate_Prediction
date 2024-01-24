@@ -41,13 +41,13 @@ The performance evaluation of the various models implemented in our study is sum
 
 | Sr No.| Model |MSE|MAE|R^2|
 | ------------- | ------------- |------------- | ------------- | ------------- |
-|1|Baseline RNN | Content Cell  | Content Cell  || Content Cell  | 
-|2|Baseline LSTM |Content Cell  | Content Cell  || Content Cell  | 
-|3| RNN (Substantial Target Data)|Second Header |Second Header |Second Header |
-|4| LSTM (Substantial Target Data) |Second Header |Second Header |Second Header |
-|5| RNN (Partial Target Data) |Second Header |Second Header |Second Header |
-|6| LSTM (Partial Target Data) |Second Header |Second Header |Second Header |
-|7| RNN (No Target Data) |Second Header |Second Header |Second Header |
-|8| LSTM (No Target Data) |Second Header |Second Header |Second Header |
-|9| HP Tuned LSTM |Second Header |Second Header |Second Header |
+|1|Baseline RNN |0.048|0.208|-4.73| 
+|2|Baseline LSTM |0.026|0.149|-2.082| 
+|3| RNN (Substantial Target Data)|0.011|0.092|-0.325|
+|4| LSTM (Substantial Target Data) |0.014|0.107|-0.748|
+|5| RNN (Partial Target Data) |0.013|0.105|-0.585|
+|6| LSTM (Partial Target Data) |0.011|0.095|-0.420|
+|7| RNN (No Target Data) |0.010|0.083|-0.196|
+|8| LSTM (No Target Data) |0.010|0.089|-0.260|
+|9| HP Tuned LSTM |0.004|0.059|0.446|
 
